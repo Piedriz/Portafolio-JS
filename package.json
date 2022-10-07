@@ -10,9 +10,10 @@
     "build": "node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
     "build:watch": "npm run build -- --watch",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Piedriz",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.19.3",
